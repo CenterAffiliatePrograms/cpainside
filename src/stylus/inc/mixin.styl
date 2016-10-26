@@ -1,0 +1,65 @@
+r-block()
+	display block
+	margin 0
+	padding 0
+	box-sizing border-box
+
+r-inline-block()
+	display inline-block
+	margin 0
+	padding 0
+	box-sizing border-box
+
+r-inline()
+	display inline
+	margin 0
+	padding 0
+	box-sizing border-box
+
+pointer-events(opt = true)
+	if opt
+		&, *
+			pointer-events none
+	else
+		&, *
+			pointer-events auto
+
+nowrap()
+	white-space nowrap
+	text-overflow ellipsis
+	overflow hidden
+
+selection(color = rgba(0,0,0,0))
+	&::selection
+		background color
+	&::-moz-selection
+		background color
+
+selection-none()
+	*
+		-moz-user-select none
+		-webkit-user-select none
+		user-select none
+
+transition-all(s = 0.5s, anim = ease)
+	transition all s anim;
+
+/* property, duration, timing-function, delay */
+transition(args...)
+	transition args
+
+rotate-deg(d)
+	transform rotate(d)
+
+scale-s(s = 1)
+	transform scale(s)
+
+placeholder(c)
+	&::-webkit-input-placeholder
+		color c
+	&::-moz-placeholder
+		color c
+	&:-moz-placeholder
+		color c
+	&:-ms-input-placeholder
+		color c

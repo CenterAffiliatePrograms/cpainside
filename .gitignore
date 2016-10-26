@@ -1,0 +1,40 @@
+# phpstorm project files
+.idea
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+/vendor
+/basic
+/.idea
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
+
+/sublime
+/node_modules
+
+
+.gitignore_BACKUP_2272
+.gitignore_BASE_2272
+.gitignore_LOCAL_2272
+.gitignore_REMOTE_2272
+.gitignore.orig
+*.orig
