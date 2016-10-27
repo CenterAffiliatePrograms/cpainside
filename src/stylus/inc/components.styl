@@ -1,5 +1,8 @@
-.c-content
-	padding 30px 0 50px
+.c-wrapper
+	r-block()
+	position relative
+	width 960px
+	margin auto
 
 .c-iframe-video
 	r-block()
@@ -153,6 +156,55 @@
 	height 0
 	overflow hidden
 
-.c-popup-send-form
-	h5
-		text-align center
+.c-bg-parallax
+	display block
+	background-color #D6D6D6
+	background-position center center
+	background-repeat no-repeat
+	background-attachment fixed
+	background-size cover
+	opacity .8
+
+.c-first-section
+	position relative
+	height 1000px
+	text-align center
+	color #FFF
+	r-block()
+	osans-700()
+	&__wrapper
+		@extend .c-wrapper
+		padding-top 40px
+		z-index 2
+	&__h1
+		r-block()
+		font-size 45px
+	&__h2
+		r-block()
+		font-size 32px
+		padding-top 5px
+		padding-bottom 25px
+	&__slider-p
+		r-block()
+		font-size 28px
+		padding-top 50px
+		padding-bottom 20px
+	&__down
+		r-block()
+		margin auto
+		cursor pointer
+	.c-bg-parallax
+		background-image url('../../images/1.jpg')
+		pos-a-full()
+		z-index 1
+	.c-video
+		margin 0 auto
+	.c-slider-company
+		r-block()
+		background-color #333
+		margin auto
+		width 850px
+		height 60px
+		margin-bottom 20px
+		
+		
