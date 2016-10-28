@@ -1,2 +1,44 @@
-// @media screen and (max-width: 1360px)
-// @media screen and (max-width: 990px)
+@media screen and (max-width: 990px)
+	.c-wrapper
+		width 700px
+	.c-first-section
+		    height auto
+		&__wrapper
+			@extend .c-wrapper
+		&__h1
+			font-size 35px
+			margin-bottom 15px
+		&__h2
+			font-size 25px
+		&__slider-p
+			font-size 23px
+	.c-slider-company
+		width 700px
+	.c-video
+		width 600px
+		height 332px
+		margin-bottom 20px
+	.c-form-section
+		&__wrapper
+			@extend .c-wrapper
+
+@media screen and (max-width: 760px)
+	.c-wrapper
+		width 360px
+	.c-first-section
+		&__wrapper
+			@extend .c-wrapper
+		&__h1
+			font-size 30px
+		&__h2
+			font-size 20px
+		&__slider-p
+			display none
+	.c-slider-company
+		display none
+	.c-video
+		width 360px
+		height 200px
+	.c-form-section
+		&__wrapper
+			@extend .c-wrapper

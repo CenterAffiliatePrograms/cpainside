@@ -11,96 +11,14 @@
 
 .c-video
 	r-block()
-	background url('../../images/main-video.jpg') center center no-repeat
-	background-size cover
 	box-shadow 0px 0px 15px 0px rgba(50, 50, 50, 0.5)
 	width 720px
 	height 400px
 	cursor pointer
-	&--reviews
-		background url('../../images/review-video.jpg') center center no-repeat
-
-.c-button-material
-	display block
-	font-size 1.5rem
-	width 200px
-
-.c-index-header
-	r-block()
-	text-align center
-	padding-bottom 20px
-
-.c-start-form
-	margin-top 30px
-	&__button
-		display block
-		float right
-		margin-right 10px
-	.input-field input:focus + label
-		color #ff6f00
-	.input-field input:focus
-		border-bottom 1px solid #ff6f00
-		box-shadow 0 1px 0 0 #ff6f00
-	.input-field input.valid
-		border-bottom 1px solid #00c853
-		box-shadow 0 1px 0 0 #00c853
-	.input-field input.invalid
-		border-bottom 1px solid #ff5252
-		box-shadow 0 1px 0 0 #ff5252
-	.input-field .prefix.active
-		color #ff6f00
-
-.c-desc-menu
-	width 675px
-	margin auto
-
-.c-mob-menu
-	padding-top 56px
-
-.c-tab
-	max-width 900px
-	margin auto
-	&__content-item
-		padding-top 30px
-
-.c-lesson-card
-	clearfix()
-	&__content
-		float left
-		width 400px
-		text-align left
-	&__content-header
-		font-size 20px
-		margin-bottom 0
-	&__content-header-bottom
-		font-size 16px
-		margin-bottom 0
-	&__content-list
-		padding-left 30px
-		margin-top 5px
-	&__icon
-		float right
-		width 420px
-	&__link
-		display block
-		cursor pointer
-	&__img
-		display block
-		width 100%
-		margin-top 30px
-
-.c-scroll-fire
-	text-align left
-	font-size 18px
-	&__item
-		position relative
-		padding-left 40px
-		line-height 28px
-		margin-bottom 10px
-	&__ico
-		position absolute
-		top 0
-		left 0
+	// background url('../../images/main-video.jpg') center center no-repeat
+	// background-size cover
+	// &--reviews
+	// 	background url('../../images/review-video.jpg') center center no-repeat
 
 .c-team-list
 	clearfix()
@@ -165,6 +83,16 @@
 	background-size cover
 	opacity .8
 
+.c-slider-company
+	r-block()
+	width 850px
+	height 60px
+	&__item
+		padding 0 10px
+		outline none
+	&__img
+		width 100%
+
 .c-first-section
 	position relative
 	height 1000px
@@ -194,17 +122,41 @@
 		margin auto
 		cursor pointer
 	.c-bg-parallax
-		background-image url('../../images/1.jpg')
+		background-image url('../../images/1-bg.jpg')
 		pos-a-full()
 		z-index 1
 	.c-video
 		margin 0 auto
 	.c-slider-company
-		r-block()
-		background-color #333
 		margin auto
-		width 850px
-		height 60px
 		margin-bottom 20px
+
+.c-form-main
+	clearfix()
+	&__item
+		r-block()
+		float left
+		width 30%
+		margin-right 5%
+		height 35px
+		background-color #FFF
+		border 1px solid #ABAAAA
+		border-radius 3px
+		padding-left 20px
+		&_button
+			background-color #F48100
+			text-align center
+			margin-right 0
+			border 1px solid #F7921E
+			color #FFF
+			cursor pointer
+			&:hover
+				background-color #F7921E
+				
+
+.c-form-section
+	&__wrapper
+		@extend .c-wrapper
+		padding 100px 0
 		
 		
