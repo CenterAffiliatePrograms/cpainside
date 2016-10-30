@@ -74,6 +74,53 @@
 	height 0
 	overflow hidden
 
+
+.c-nav-top
+	position fixed
+	background-color #FFF
+	box-shadow 0px 3px 8px rgba(0, 0, 0, 0.3)
+	padding-top 5px
+	top 0
+	left 0
+	width 100%
+	transform translateY(-100%)
+	z-index 99
+	transition-all()
+	&__wrapper
+		@extend .c-wrapper
+		clearfix()
+	&__logo
+		r-block()
+		float left
+	&__inner
+		r-block()
+		clearfix()
+		float right
+	&__item
+		r-block()
+		float left
+		padding 0 2px
+	&__a
+		r-block()
+		osans-700()
+		line-height 1
+		color #545454
+		font-size 14px
+		padding 20px 13px 8px
+		text-decoration none
+		border-bottom 1px solid rgba(0, 0, 0, 0)
+		transition-all()
+		&:hover
+			border-bottom-color #597EB1
+			color #545454
+		&_is-active
+			color #597EB1 !important
+			border-bottom-color #597EB1 !important
+		&_free
+			color #FBB03B
+	&_hide
+		transform translateY(0)
+
 .c-bg-parallax
 	display block
 	background-color #D6D6D6
@@ -115,7 +162,7 @@
 
 .c-first-section
 	position relative
-	height 1000px
+	min-height 950px
 	text-align center
 	color #FFF
 	r-block()
@@ -124,6 +171,9 @@
 		@extend .c-wrapper
 		padding-top 40px
 		z-index 2
+	&__logo
+		r-block()
+		display none
 	&__h1
 		r-block()
 		font-size 45px
@@ -144,7 +194,7 @@
 		pos-a-full()
 		z-index 1
 	.c-video
-		margin 0 auto
+		margin 30px auto 0
 	.c-slider-company
 		margin auto
 		margin-bottom 20px
@@ -200,6 +250,7 @@
 		background-image url('../../images/2-bg.jpg')
 		pos-a-full()
 		z-index 1
+
 		
 		
 		

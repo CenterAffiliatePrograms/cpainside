@@ -1,10 +1,15 @@
 @media screen and (max-width: 990px)
+	.c-nav-top
+		display none
 	.c-wrapper
 		width 700px
 	.c-first-section
-		    height auto
+		height auto
+		min-height 1024px
 		&__wrapper
 			@extend .c-wrapper
+		&__logo
+			display block
 		&__h1
 			font-size 35px
 			margin-bottom 15px
@@ -12,6 +17,9 @@
 			font-size 25px
 		&__slider-p
 			font-size 23px
+		.c-video
+			margin-top 100px
+			margin-bottom 50px
 	.c-slider-company
 		width 700px
 	.c-video
@@ -28,6 +36,7 @@
 	.c-wrapper
 		width 360px
 	.c-first-section
+		min-height 800px
 		&__wrapper
 			@extend .c-wrapper
 		&__h1
@@ -36,6 +45,9 @@
 			font-size 20px
 		&__slider-p
 			display none
+		.c-video
+			margin-top 0
+			margin-bottom 0
 	.c-slider-company
 		display none
 	.c-video
