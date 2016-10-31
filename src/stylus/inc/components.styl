@@ -240,9 +240,9 @@
 	position relative
 	&__wrapper
 		@extend .c-wrapper
-		padding 100px 0
 		position relative
 		z-index 2
+		padding 100px 0
 	.c-form-main
 		width 850px
 		margin auto
@@ -251,6 +251,54 @@
 		pos-a-full()
 		z-index 1
 
-		
-		
+
+.c-question-item
+	background url('../../images/q-i.png') 0 5px no-repeat
+	font-size 18px
+	color #FFF
+	padding-right 25px
+	padding-left 60px
+
+.c-learn-tabs
+	&__header
+		clearfix()
+	&__header-item
+		float left
+		margin-right 50px
+		&:last-child
+			margin-right 0
+	&__content
+		padding-top 50px
+
+.c-content-cours
+	position relative
+	color #FFF
+	&__wrapper
+		@extend .c-wrapper
+		position relative
+		z-index 2
+		padding-top 80px
+	&__h2
+		r-block()
+		osans-700()
+		font-size 30px
+		text-align center
+	&__h3
+		r-block()
+		osans-700()
+		font-size 20px
+		text-align center
+		margin-top 15px
+		margin-bottom 25px
+	&__list
+		clearfix()
+	&__list-item
+		float left
+		width 50%
+	.c-bg-parallax
+		background-image url('../../images/3-bg.jpg')
+		pos-a-full()
+		z-index 1
+	.c-question-item
+		margin-bottom 60px
 		
