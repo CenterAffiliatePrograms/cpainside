@@ -79,7 +79,7 @@ app.navigation = (()=> {
 			});
 		},
 		scrollTo($el) {
-			let href = $el.attr('href');
+			let href = $el.attr('data-href');
 			app.hb.stop().animate({
 				scrollTop: $(href).offset().top - 60
 			}, 1200);

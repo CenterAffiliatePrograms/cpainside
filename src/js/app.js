@@ -40,6 +40,10 @@ window.addEventListener('load', e=> {
 			tabsContent.find('.c-learn-tabs__content-item_is-active').removeClass('c-learn-tabs__content-item_is-active');
 			tabsContent.find('.c-learn-tabs__content-item').eq(parseInt($el.attr('data-tab'))).addClass('c-learn-tabs__content-item_is-active');
 		}
+		// Кидаем на оплату при клике на картинку
+		if ($el.hasClass('c-learn-tabs__img')) {
+			app.navigation.scrollTo($el);
+		}
 	});
 	/* --- */
 	
