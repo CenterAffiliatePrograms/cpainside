@@ -34,6 +34,26 @@
 	.c-content-cours
 		&__wrapper
 			@extend .c-wrapper
+	.c-content-cours
+		&__wrapper
+			padding-bottom 330px
+		&__list
+			width 430px
+			margin auto
+		&__list-item
+			width 100%
+		.c-question-item
+			margin-bottom 40px
+	.c-learn-tabs
+		&__header-item
+			margin-right 18px
+		&__content-inner
+			margin auto
+		&__img
+			bottom -300px
+			top auto
+			left 50%
+			margin-left -220px
 
 @media screen and (max-width: 760px)
 	.c-wrapper
@@ -77,3 +97,18 @@
 	.c-content-cours
 		&__wrapper
 			@extend .c-wrapper
+			padding-bottom 0
+	.c-content-cours
+		&__h2
+			font-size 20px
+		&__h3
+			font-size 16px
+			&_last
+				display none
+		&__list
+			width 100%
+		.c-question-item
+			font-size 16px
+			width 100%
+		.c-learn-tabs
+			display none

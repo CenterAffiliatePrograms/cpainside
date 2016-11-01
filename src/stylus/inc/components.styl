@@ -253,22 +253,72 @@
 
 
 .c-question-item
-	background url('../../images/q-i.png') 0 5px no-repeat
+	background url('../../images/q-i.png') 0 4px no-repeat
 	font-size 18px
 	color #FFF
 	padding-right 25px
 	padding-left 60px
 
 .c-learn-tabs
+	max-width 850px
+	margin auto
 	&__header
 		clearfix()
+		selection-none()
 	&__header-item
 		float left
-		margin-right 50px
+		margin-right 37px
+		width 60px
+		text-align center
+		font-size 14px
+		text-transform uppercase
+		color #999
+		osans-700()
+		cursor pointer
+		transition(color .3s linear)
 		&:last-child
 			margin-right 0
+		&:hover
+			color #FFF
+		&_is-active
+			text-decoration underline
+			color #FFF
+			font-size 14.5px
 	&__content
-		padding-top 50px
+		padding-top 30px
+		color #FFF
+	&__content-item
+		display none
+		position relative
+		&_is-active
+			display block
+	&__h4
+		r-block()
+		margin-bottom 10px
+		font-size 22px
+		osans-400()
+	&__content-top
+		p
+			r-block()
+			font-size 11px
+			font-style italic
+	&__h4-bottom
+		r-block()
+		osans-400()
+		margin-top 10px
+		margin-bottom 2px
+		font-size 16px
+	&__content-bottom
+		p
+			r-block()
+			font-size 13px
+	&__content-inner
+		width 400px
+	&__img
+		r-block()
+		position absolute
+		top 0
+		right 0
 
 .c-content-cours
 	position relative
@@ -278,6 +328,7 @@
 		position relative
 		z-index 2
 		padding-top 80px
+		padding-bottom 155px
 	&__h2
 		r-block()
 		osans-700()
