@@ -71,7 +71,7 @@ app.navigation = (()=> {
 				if (d === "up") {
 					section = section.prev();
 				}
-				link = app.topMenu.el.find('div a[href="#' + section.attr("id") + '"]');
+				link = app.topMenu.el.find('div a[data-href="#' + section.attr("id") + '"]');
 				app.topMenu.items.removeClass("c-nav-top__a_is-active");
 				link.addClass("c-nav-top__a_is-active");
 			}, {

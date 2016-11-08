@@ -41,7 +41,7 @@ window.addEventListener('load', e=> {
 			tabsContent.find('.c-learn-tabs__content-item').eq(parseInt($el.attr('data-tab'))).addClass('c-learn-tabs__content-item_is-active');
 		}
 		// Кидаем на оплату при клике на картинку
-		if ($el.hasClass('c-learn-tabs__img')) {
+		if ($el.hasClass('c-learn-tabs__img') || $el.hasClass('js-click-down')) {
 			app.navigation.scrollTo($el);
 		}
 	});
